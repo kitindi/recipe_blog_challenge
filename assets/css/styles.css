@@ -9,12 +9,14 @@
 :root{
     --font-heading:'Playfair Display', serif;
     --font-body:'Montserrat', sans-serif;
+    --secondary-color:#F2994A;
+    --primary-color:#222222;
 }
 
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 img{
     width: 100%;
@@ -36,4 +38,40 @@ img{
 }
 .banner .banner__image{
     border-radius: 15px;
+}
+
+/* INGREDIENTS SECTION */
+
+.ingrid__icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem;
+}
+.col-1{
+    grid-column: 1 / -1;
+}
+
+.icon-col{
+    display: flex;
+    align-items: center;
+    padding: .2rem 0;
+}
+.icon-col div{
+    margin: 0 .15rem;
+}
+.grey{
+    font-size: .85em;
+    font-weight:600;
+    color: #aaa5a5;
+    font-family: var(--font-body);
+}
+.grey span{
+    color:var(--primary-color);
+    font-size: .8em;
+}
+.fa-utensils{
+    color: var(--secondary-color);
+}
+span.orange{
+   color: var(--secondary-color);
 }
