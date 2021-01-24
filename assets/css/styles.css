@@ -41,7 +41,9 @@ img{
 }
 
 /* INGREDIENTS SECTION */
-
+.ingredients{
+    padding: 2rem 0;
+}
 .ingrid__icons{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,3 +77,68 @@ img{
 span.orange{
    color: var(--secondary-color);
 }
+
+/* ingredient descriptions */
+.ingred__desc{
+    margin-top: 1.5rem;
+}
+.ingred__title{
+    font-family: var(--font-heading);
+    font-size: 1.75em;
+    margin-bottom: 1rem;
+}
+.ingre_subtitle{
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.25em;
+    margin:.75rem;
+}
+.ingred__item{
+  display: flex;
+  align-items: flex-start;
+  padding: .5rem;
+}
+.checkbox{
+    margin-right: 1rem;
+}
+.ingred__item input{
+    padding: 1rem;
+    width: 21px;
+    height: 21px;
+}
+.ingred__item .text{
+    font-size: 1.2em;
+    font-family: var(--font-body);
+    line-height: 1.2;
+}
+
+/* Instructions */
+.ingred_subtitle{
+     font-family: var(--font-heading);
+    font-size: 1.75em;
+    margin: .75rem 0;
+}
+ .instruct_order{
+    align-self: flex-start;
+     margin-right: 1rem;
+     
+ }
+ .instruct_order p{
+    border-radius: 5px;
+     color: #fff;
+    padding:.75rem;
+     font-size: 1.2em;
+     font-weight: 700;
+     font-family: var(--font-heading);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background: var(--secondary-color);
+ }
+ .instruct_details{
+     font-size: 1.2em;
+    font-family: var(--font-body);
+    line-height: 1.2;
+ }
