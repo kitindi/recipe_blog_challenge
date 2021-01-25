@@ -135,11 +135,16 @@ span.orange{
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 1rem;
+   
 }
 .column-1{
     padding-left: 2rem;
     padding-right: 2rem;
+     font-size: .85rem;
 } 
+.instruct_details{
+    font-size: .85rem; 
+}
 .column-2{
     padding-top: 1.75rem;
 }
