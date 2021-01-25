@@ -12,9 +12,11 @@
     --secondary-color:#F2994A;
     --primary-color:#222222;
 }
-
+body{
+    background: #FAFAFA;
+}
 .container{
-    max-width: 1100px;
+    max-width:960px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -24,25 +26,34 @@ img{
 
 
 /* BANNER STYLES */
-.banner .banner__title{
+
+.banner_area .banner__title{
     font-family: var(--font-heading);
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: 700;
 }
-.banner .banner__text{
+.banner_area .banner__text{
+    max-width: 592px;
     font-size: 1em;
     font-family: var(--font-body);
     font-style: italic;
     font-weight: 500;
     padding: 1rem;
+    line-height: 1.2;
 }
-.banner .banner__image{
-    border-radius: 15px;
+.banner__image{
+    height: 300px;
+    border-radius: 5px;
+}
+
+@media(min-width:600px){
+
 }
 
 /* INGREDIENTS SECTION */
-.ingredients{
-    padding: 2rem 0;
+.ingredients_area .container{
+    display: flex;
+    flex-direction: column-reverse;
 }
 .ingrid__icons{
     display: grid;
@@ -79,6 +90,12 @@ span.orange{
 }
 
 /* ingredient descriptions */
+.ingred_cols{
+    display: grid;
+}
+.large-icons{
+    order: 1;
+}
 .ingred__desc{
     margin-top: 1.5rem;
 }
@@ -87,11 +104,11 @@ span.orange{
     font-size: 1.75em;
     margin-bottom: 1rem;
 }
-.ingre_subtitle{
+.ingred_subtitle{
     font-family: var(--font-heading);
     font-weight: 400;
     font-style: italic;
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin:.75rem;
 }
 .ingred__item{
@@ -113,8 +130,34 @@ span.orange{
     line-height: 1.2;
 }
 
+@media(min-width:600px){
+  .ingredients_area .container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem;
+}
+.column-1{
+    padding-left: 2rem;
+    padding-right: 2rem;
+} 
+.column-2{
+    padding-top: 1.75rem;
+}
+.column-2 .ingrid__icons{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 250px;
+ padding: .5rem;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 0px 0px 5px 2px #bdbdbd;;
+}
+}
+
 /* Instructions */
-.ingred_subtitle{
+.ingred_subtitle_2{
      font-family: var(--font-heading);
     font-size: 1.75em;
     margin: .75rem 0;
