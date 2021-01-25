@@ -185,3 +185,10 @@ span.orange{
     font-family: var(--font-body);
     line-height: 1.2;
  }
+
+ .footer{
+     text-align: center;
+     font-size: 1em;
+     font: var(--font-body);
+     color: #aaa5a5;
+ }
